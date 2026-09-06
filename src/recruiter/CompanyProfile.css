@@ -1,0 +1,314 @@
+/* ================================
+   COMPANY PROFILE PAGE
+================================ */
+
+.company-profile-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+  color: #1f2937;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.dashboard-header {
+  height: 72px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  gap: 30px;
+}
+
+.dashboard-logo {
+  text-decoration: none;
+  color: #111827;
+  font-size: 24px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.dashboard-logo span {
+  color: #2563eb;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.dashboard-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.dashboard-nav a {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.dashboard-nav a:hover {
+  color: #2563eb;
+}
+
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  white-space: nowrap;
+}
+
+.dashboard-user span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.dashboard-user button {
+  border: none;
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 9px 16px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dashboard-user button:hover {
+  background: #fecaca;
+}
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.company-profile-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 45px 0 70px;
+}
+
+/* ================================
+   HEADING
+================================ */
+
+.company-heading {
+  margin-bottom: 30px;
+}
+
+.company-heading h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  color: #111827;
+}
+
+.company-heading p {
+  margin: 0;
+  max-width: 700px;
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ================================
+   CARD
+================================ */
+
+.company-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+}
+
+.company-card-header {
+  margin-bottom: 28px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eef0f4;
+}
+
+.company-card-header h2 {
+  margin: 0 0 6px;
+  color: #111827;
+  font-size: 20px;
+}
+
+.company-card-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ================================
+   FORM
+================================ */
+
+.company-form-group {
+  margin-bottom: 22px;
+}
+
+.company-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.company-form-group input,
+.company-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: #ffffff;
+  color: #111827;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.company-form-group input {
+  height: 46px;
+}
+
+.company-form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.company-form-group input:focus,
+.company-form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.company-form-group input::placeholder,
+.company-form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* ================================
+   TWO COLUMN FORM
+================================ */
+
+.company-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+/* ================================
+   BUTTON
+================================ */
+
+.company-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.save-company-button {
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.save-company-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* ================================
+   LOADING
+================================ */
+
+.company-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 950px) {
+  .dashboard-header {
+    padding: 0 4%;
+  }
+
+  .dashboard-nav {
+    gap: 16px;
+  }
+
+  .company-profile-container {
+    width: 92%;
+  }
+}
+
+@media (max-width: 750px) {
+  .dashboard-header {
+    height: auto;
+    padding: 18px 5%;
+    flex-wrap: wrap;
+  }
+
+  .dashboard-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .company-form-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .company-profile-container {
+    width: 92%;
+    padding: 30px 0 50px;
+  }
+
+  .company-heading h1 {
+    font-size: 27px;
+  }
+
+  .company-card {
+    padding: 20px;
+  }
+
+  .company-card-header h2 {
+    font-size: 18px;
+  }
+
+  .company-actions {
+    justify-content: stretch;
+  }
+
+  .save-company-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,731 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eefaff;
+  color: #293957;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  height: 70px;
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 75px;
+
+  gap: 30px;
+}
+
+header h1 {
+  font-size: 20px;
+  color: #293957;
+  margin-right: 25px;
+}
+
+header nav {
+  flex: 1;
+}
+
+header nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+header nav a {
+  font-size: 12px;
+  color: #596275;
+}
+
+header > a {
+  font-size: 12px;
+  color: #493ee8;
+}
+
+header > a:last-child {
+  background: #493ee8;
+  color: white;
+
+  padding: 12px 20px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+
+  background: white;
+
+  position: relative;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.left-hero {
+  height: 490px;
+
+  padding: 75px 75px;
+
+  background: linear-gradient(
+    120deg,
+    #ffffff,
+    #faf9ff
+  );
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* Decorative background */
+
+.left-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 300px;
+
+  right: -50px;
+  top: -70px;
+
+  border: 2px solid rgba(76, 66, 232, 0.12);
+
+  transform: rotate(-30deg);
+}
+
+.left-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 400px;
+  height: 250px;
+
+  right: 50px;
+  top: 40px;
+
+  border: 2px solid rgba(76, 66, 232, 0.10);
+
+  transform: rotate(-30deg);
+}
+
+
+/* Hero heading */
+
+.left-hero h1 {
+  position: relative;
+  z-index: 2;
+
+  width: 450px;
+
+  font-size: 64px;
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  color: #293957;
+}
+
+.left-hero h1 span {
+  color: #329cf2;
+}
+
+.left-hero p {
+  position: relative;
+  z-index: 2;
+
+  width: 500px;
+
+  margin-top: 25px;
+
+  font-size: 15px;
+  line-height: 1.5;
+
+  color: #8995a8;
+}
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.right-hero {
+  position: absolute;
+
+  z-index: 3;
+
+  right: 35px;
+  top: 70px;
+
+  width: 430px;
+  height: 430px;
+
+  overflow: hidden;
+}
+
+.right-hero img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  display: block;
+}
+
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.search-bar {
+  position: absolute;
+
+  z-index: 10;
+
+  left: 75px;
+  top: 370px;
+
+  width: 870px;
+  height: 72px;
+
+  background: white;
+
+  display: flex;
+  align-items: stretch;
+
+  box-shadow: 0 12px 35px rgba(40, 50, 90, 0.15);
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+
+  padding: 0 25px;
+
+  font-size: 14px;
+
+  color: #555;
+}
+
+.search-bar input:first-child {
+  width: 360px;
+
+  border-right: 1px solid #eeeeee;
+}
+
+.search-bar input:nth-child(2) {
+  width: 280px;
+}
+
+.search-bar input::placeholder {
+  color: #a3adbc;
+}
+
+.search-bar button {
+  width: 200px;
+
+  border: none;
+
+  background: #4c41e8;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #392fd5;
+}
+
+
+/* =========================
+   RESULT TEXT
+========================= */
+
+main > p {
+  position: absolute;
+
+  z-index: 10;
+
+  left: 75px;
+  top: 448px;
+
+  font-size: 12px;
+
+  color: #9ba5b5;
+}
+
+
+/* =========================
+   COMPANY LOGOS
+========================= */
+
+.job-listings {
+  height: 155px;
+
+  padding: 0 75px;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  background: white;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.job-listings h3 {
+  display: none;
+}
+
+.job-listings img {
+  width: 105px;
+  height: 45px;
+
+  object-fit: contain;
+
+  filter: grayscale(1);
+
+  opacity: 0.45;
+}
+
+
+/* =========================
+   CATEGORY SECTION
+========================= */
+
+.category {
+  padding: 65px 75px 80px;
+
+  background: white;
+}
+
+
+/* Heading */
+
+.category > h3 {
+  display: inline-block;
+
+  font-size: 30px;
+
+  font-weight: 700;
+
+  color: #293957;
+}
+
+
+/* Remove duplicate "category" */
+
+.category > h3::after {
+  content: none;
+}
+
+
+/* View all */
+
+.category > span {
+  float: right;
+
+  margin-top: 8px;
+
+  color: #4c41e8;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   CATEGORY CARDS CONTAINER
+========================= */
+
+.category > .category {
+  clear: both;
+
+  padding: 35px 0 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+
+/* =========================
+   CATEGORY CARD
+========================= */
+
+.category-block {
+  height: 170px;
+
+  border: 1px solid #e3e6ec;
+
+  padding: 22px;
+
+  background: white;
+
+  transition: 0.2s;
+
+  position: relative;
+}
+
+.category-block:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 25px rgba(40, 50, 90, 0.10);
+}
+
+
+/* Marketing */
+
+.category-block:nth-child(3) {
+  background: #4c41e8;
+
+  border-color: #4c41e8;
+}
+
+
+/* Icons */
+
+.category-block img {
+  width: 28px;
+  height: 28px;
+
+  object-fit: contain;
+
+  margin-bottom: 20px;
+}
+
+
+/* Card title */
+
+.category-block h4 {
+  font-size: 15px;
+
+  color: #293957;
+
+  margin-bottom: 12px;
+}
+
+
+/* Card description */
+
+.category-block p {
+  font-size: 11px;
+
+  color: #9aa3b2;
+}
+
+
+/* Marketing text */
+
+.category-block:nth-child(3) h4,
+.category-block:nth-child(3) p {
+  color: white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  width: 100%;
+
+  background: #293957;
+
+  color: white;
+
+  padding: 35px 75px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+
+/* Copyright full row */
+
+footer > p {
+  width: 100%;
+
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+
+  font-size: 12px;
+
+  color: #c0c8d5;
+}
+
+
+/* Bottom row */
+
+.home,
+.social-media {
+  display: flex;
+
+  gap: 30px;
+
+  align-items: center;
+}
+
+.home a,
+.social-media a {
+  font-size: 12px;
+
+  color: #d0d6df;
+}
+
+.home a:hover,
+.social-media a:hover {
+  color: white;
+}
+
+
+/* Put the two groups on same row */
+
+footer .home {
+  align-self: flex-start;
+}
+
+footer .social-media {
+  align-self: flex-start;
+}
+
+
+/* =========================
+   DESKTOP FOOTER LAYOUT
+========================= */
+
+@media (min-width: 700px) {
+
+  footer {
+    position: relative;
+
+    padding-bottom: 35px;
+  }
+
+  footer .home {
+    position: absolute;
+
+    left: 75px;
+    bottom: 35px;
+  }
+
+  footer .social-media {
+    position: absolute;
+
+    right: 75px;
+    bottom: 35px;
+  }
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  header {
+    padding: 0 35px;
+  }
+
+  .left-hero {
+    padding-left: 35px;
+  }
+
+  .left-hero h1 {
+    font-size: 50px;
+  }
+
+  .right-hero {
+    right: 20px;
+
+    width: 350px;
+    height: 350px;
+  }
+
+  .search-bar {
+    left: 35px;
+
+    width: 700px;
+  }
+
+  main > p {
+    left: 35px;
+  }
+
+  .job-listings {
+    padding: 0 35px;
+  }
+
+  .category {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  footer {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  footer .social-media {
+    right: 35px;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  header {
+    height: auto;
+
+    padding: 20px;
+
+    flex-wrap: wrap;
+  }
+
+  header nav {
+    order: 3;
+
+    width: 100%;
+
+    flex: none;
+  }
+
+  .left-hero {
+    height: 600px;
+
+    padding: 45px 25px;
+  }
+
+  .left-hero h1 {
+    width: 100%;
+
+    font-size: 42px;
+  }
+
+  .left-hero p {
+    width: 100%;
+  }
+
+  .right-hero {
+    display: none;
+  }
+
+  .search-bar {
+    left: 25px;
+    top: 350px;
+
+    width: calc(100% - 50px);
+
+    height: auto;
+
+    flex-direction: column;
+  }
+
+  .search-bar input,
+  .search-bar input:first-child,
+  .search-bar input:nth-child(2),
+  .search-bar button {
+    width: 100%;
+
+    height: 55px;
+
+    border-bottom: 1px solid #eee;
+  }
+
+  main > p {
+    left: 25px;
+
+    top: 550px;
+  }
+
+  .job-listings {
+    height: auto;
+
+    padding: 35px 25px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .category {
+    padding: 45px 25px;
+  }
+
+  .category > .category {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    padding: 30px 25px;
+
+    min-height: 220px;
+  }
+
+  footer .home,
+  footer .social-media {
+    position: static;
+
+    align-self: flex-start;
+  }
+}
+
+
+@media (max-width: 450px) {
+
+  .category > .category {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,176 @@
+.manage-users-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.manage-users-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.manage-users-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.manage-users-heading h1 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 34px;
+}
+
+.manage-users-heading p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 17px;
+}
+
+.back-dashboard-button {
+  text-decoration: none;
+  background: #4f46e5;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.users-summary {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.users-summary strong {
+  font-size: 28px;
+  color: #4f46e5;
+}
+
+.users-summary span {
+  color: #6b7280;
+}
+
+.users-table-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.users-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.users-table th {
+  background: #f8fafc;
+  color: #374151;
+  font-size: 14px;
+  text-align: left;
+  padding: 16px 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.users-table td {
+  padding: 18px;
+  border-bottom: 1px solid #eef0f3;
+  color: #4b5563;
+}
+
+.users-table tbody tr:hover {
+  background: #fafbff;
+}
+
+.user-role {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.user-role.admin {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.user-role.recruiter {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.user-role.jobseeker {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.delete-user-button {
+  border: none;
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 8px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.delete-user-button:hover {
+  background: #fecaca;
+}
+
+.current-user {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.users-empty {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.users-empty h2 {
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.users-empty p {
+  color: #6b7280;
+}
+
+.manage-users-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4f46e5;
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .manage-users-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .manage-users-heading h1 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,402 @@
+/* ================================
+   EDIT JOB PAGE
+================================ */
+
+.edit-job-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+  color: #172033;
+  padding-bottom: 60px;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.edit-job-header {
+  background: linear-gradient(135deg, #2563eb, #6d28d9);
+  color: white;
+
+  padding: 34px 7%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.edit-job-header h1 {
+  margin: 0;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.edit-job-header p {
+  margin: 6px 0 0;
+
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+
+/* ================================
+   BACK BUTTON
+================================ */
+
+.back-btn {
+  background: white;
+
+  color: #4f46e5;
+
+  border: none;
+
+  padding: 11px 18px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================================
+   FORM CONTAINER
+================================ */
+
+.edit-job-container {
+  width: 86%;
+  max-width: 900px;
+
+  margin: 32px auto;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+.edit-job-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+/* ================================
+   FORM SECTION
+================================ */
+
+.form-section {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  padding: 24px;
+
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.form-section h2 {
+  margin: 0 0 22px;
+
+  font-size: 17px;
+  font-weight: 650;
+
+  color: #111827;
+
+  padding-bottom: 14px;
+
+  border-bottom: 1px solid #eef0f4;
+}
+
+
+/* ================================
+   FORM GROUP
+================================ */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin-bottom: 18px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  color: #374151;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dfe3eb;
+
+  background: white;
+
+  color: #172033;
+
+  padding: 11px 12px;
+
+  border-radius: 7px;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  outline: none;
+
+  transition: all 0.2s ease;
+}
+
+.form-group input {
+  height: 42px;
+}
+
+.form-group textarea {
+  resize: vertical;
+
+  min-height: 130px;
+
+  line-height: 1.6;
+}
+
+.form-group select {
+  height: 42px;
+
+  cursor: pointer;
+}
+
+
+/* ================================
+   INPUT FOCUS
+================================ */
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #6366f1;
+
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.08);
+}
+
+
+/* ================================
+   PLACEHOLDER
+================================ */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+
+/* ================================
+   TWO COLUMN ROW
+================================ */
+
+.form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+
+/* ================================
+   FORM ACTIONS
+================================ */
+
+.form-actions {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  padding: 18px 24px;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+  gap: 10px;
+
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+
+/* ================================
+   CANCEL BUTTON
+================================ */
+
+.cancel-btn {
+  background: white;
+
+  border: 1px solid #dfe3eb;
+
+  color: #4b5563;
+
+  padding: 10px 17px;
+
+  border-radius: 7px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.cancel-btn:hover {
+  background: #f8fafc;
+
+  border-color: #cbd5e1;
+
+  color: #374151;
+}
+
+
+/* ================================
+   SAVE BUTTON
+================================ */
+
+.save-btn {
+  background: linear-gradient(135deg, #2563eb, #6d28d9);
+
+  border: none;
+
+  color: white;
+
+  padding: 10px 20px;
+
+  border-radius: 7px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.save-btn:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.2);
+}
+
+.save-btn:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+  box-shadow: none;
+}
+
+
+/* ================================
+   LOADING
+================================ */
+
+.edit-job-loading {
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: #f7f8fc;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+  .edit-job-header {
+    padding: 28px 5%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .edit-job-header h1 {
+    font-size: 26px;
+  }
+
+  .edit-job-container {
+    width: 90%;
+  }
+
+  .form-section {
+    padding: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .form-actions {
+    padding: 16px 20px;
+
+    justify-content: stretch;
+  }
+
+  .cancel-btn,
+  .save-btn {
+    flex: 1;
+  }
+}

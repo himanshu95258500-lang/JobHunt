@@ -1,0 +1,516 @@
+/* ================================
+   APPLICATIONS PAGE
+================================ */
+
+.applications-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+  color: #1f2937;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.dashboard-header {
+  height: 72px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  gap: 30px;
+}
+
+.dashboard-logo {
+  text-decoration: none;
+  color: #111827;
+  font-size: 24px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.dashboard-logo span {
+  color: #2563eb;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.dashboard-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.dashboard-nav a {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.dashboard-nav a:hover {
+  color: #2563eb;
+}
+
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  white-space: nowrap;
+}
+
+.dashboard-user span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.dashboard-user button {
+  border: none;
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 9px 16px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dashboard-user button:hover {
+  background: #fecaca;
+}
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.applications-container {
+  width: 90%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 45px 0 70px;
+}
+
+/* ================================
+   HEADING
+================================ */
+
+.applications-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.applications-heading h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  color: #111827;
+}
+
+.applications-heading p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.find-jobs-button {
+  display: inline-block;
+  text-decoration: none;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+.find-jobs-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* ================================
+   STAT CARDS
+================================ */
+
+.application-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.application-stat-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+}
+
+.application-stat-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 9px;
+  background: #eff6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.application-stat-card h2 {
+  margin: 0 0 4px;
+  font-size: 24px;
+  color: #111827;
+}
+
+.application-stat-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+/* ================================
+   FILTERS
+================================ */
+
+.application-filters {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.application-filters button {
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  padding: 10px 18px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+.application-filters button:hover {
+  background: #f3f4f6;
+  color: #2563eb;
+}
+
+.application-filters button.active-filter {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* ================================
+   APPLICATION LIST
+================================ */
+
+.applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ================================
+   APPLICATION CARD
+================================ */
+
+.application-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+  transition: 0.2s;
+}
+
+.application-card:hover {
+  border-color: #bfdbfe;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.07);
+}
+
+/* Company Logo */
+
+.company-logo {
+  width: 58px;
+  height: 58px;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+/* Application Information */
+
+.application-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.application-info h2 {
+  margin: 0 0 5px;
+  color: #111827;
+  font-size: 18px;
+}
+
+.application-info h3 {
+  margin: 0 0 12px;
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.application-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.application-details span {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+/* ================================
+   STATUS
+================================ */
+
+.application-status {
+  min-width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Applied */
+
+.status-applied {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+/* Shortlisted */
+
+.status-shortlisted {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* Interview */
+
+.status-interview {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+/* Rejected */
+
+.status-rejected {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+/* ================================
+   VIEW DETAILS BUTTON
+================================ */
+
+.view-application-button {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+  padding: 8px 13px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.view-application-button:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+/* ================================
+   EMPTY STATE
+================================ */
+
+.no-applications {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 70px 30px;
+  text-align: center;
+}
+
+.no-applications-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #eff6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.no-applications h2 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 20px;
+}
+
+.no-applications p {
+  margin: 0 0 22px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ================================
+   LOADING
+================================ */
+
+.applications-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+  .dashboard-header {
+    padding: 0 4%;
+  }
+
+  .dashboard-nav {
+    gap: 16px;
+  }
+
+  .application-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .applications-container {
+    width: 92%;
+  }
+}
+
+@media (max-width: 750px) {
+  .dashboard-header {
+    height: auto;
+    padding: 18px 5%;
+    flex-wrap: wrap;
+  }
+
+  .dashboard-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .applications-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .application-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .application-status {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 500px) {
+  .applications-container {
+    width: 92%;
+    padding: 30px 0 50px;
+  }
+
+  .applications-heading h1 {
+    font-size: 27px;
+  }
+
+  .application-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .application-card {
+    padding: 18px;
+  }
+
+  .company-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .application-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+  }
+
+  .application-status {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .find-jobs-button {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
