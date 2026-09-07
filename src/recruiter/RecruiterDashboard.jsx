@@ -47,13 +47,13 @@ function RecruiterDashboard() {
   const fetchDashboardData = async (token) => {
     try {
       const [jobsResponse, applicantsResponse] = await Promise.all([
-        fetch("http://localhost:5000/api/recruiter/jobs", {
+        fetch("https://jobhunt-5q5m.onrender.com/api/recruiter/jobs", {
           headers: {
             Authorization: "Bearer " + token,
           },
         }),
 
-        fetch("http://localhost:5000/api/recruiter/applicants", {
+        fetch("https://jobhunt-5q5m.onrender.com/api/recruiter/applicants", {
           headers: {
             Authorization: "Bearer " + token,
           },

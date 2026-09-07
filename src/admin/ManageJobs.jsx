@@ -39,7 +39,7 @@ function ManageJobs() {
   const fetchJobs = async (token) => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/jobs",
+        "https://jobhunt-5q5m.onrender.com/api/admin/jobs",
         {
           headers: {
             Authorization: "Bearer " + token,
@@ -79,7 +79,7 @@ function ManageJobs() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/jobs/${jobId}`,
+        `https://jobhunt-5q5m.onrender.com/api/admin/jobs/${jobId}`,
         {
           method: "DELETE",
           headers: {

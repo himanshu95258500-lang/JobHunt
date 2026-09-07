@@ -23,7 +23,7 @@ function Applicants() {
       return;
     }
 
-    fetch("http://localhost:5000/api/recruiter/applicants", {
+    fetch("https://jobhunt-5q5m.onrender.com/api/recruiter/applicants", {
       headers: {
         Authorization: "Bearer " + token,
       },
@@ -52,7 +52,7 @@ function Applicants() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/recruiter/applications/${applicationId}/status`,
+        `https://jobhunt-5q5m.onrender.com/api/recruiter/applications/${applicationId}/status`,
         {
           method: "PUT",
           headers: {

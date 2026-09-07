@@ -49,7 +49,7 @@ function CompanyProfile() {
   const fetchCompany = async (token) => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/recruiter/company",
+        "https://jobhunt-5q5m.onrender.com/api/recruiter/company",
         {
           headers: {
             Authorization: "Bearer " + token,
@@ -106,7 +106,7 @@ function CompanyProfile() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/recruiter/company",
+        "https://jobhunt-5q5m.onrender.com/api/recruiter/company",
         {
           method: companyExists ? "PUT" : "POST",
           headers: {

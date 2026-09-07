@@ -39,7 +39,7 @@ function ManageUsers() {
   const fetchUsers = async (token) => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/users",
+        "https://jobhunt-5q5m.onrender.com/api/admin/users",
         {
           headers: {
             Authorization: "Bearer " + token,
@@ -79,7 +79,7 @@ function ManageUsers() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/users/${userId}`,
+        `https://jobhunt-5q5m.onrender.com/api/admin/users/${userId}`,
         {
           method: "DELETE",
           headers: {

@@ -18,7 +18,7 @@ function FindJobs() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/jobs")
+    fetch("https://jobhunt-5q5m.onrender.com/api/jobs")
       .then((response) => response.json())
       .then((data) => {
         console.log("Jobs from database:", data);
@@ -62,7 +62,7 @@ function FindJobs() {
       return;
     }
 
-    fetch("http://localhost:5000/api/jobs/saved", {
+    fetch("https://jobhunt-5q5m.onrender.com/api/jobs/saved", {
       headers: {
         Authorization: "Bearer " + token,
       },
@@ -98,7 +98,7 @@ function FindJobs() {
       const isSaved = savedJobs.includes(id);
 
       const response = await fetch(
-        `http://localhost:5000/api/jobs/${id}/save`,
+        `https://jobhunt-5q5m.onrender.com/api/jobs/${id}/save`,
         {
           method: isSaved ? "DELETE" : "POST",
           headers: {

@@ -43,7 +43,7 @@ function JobSeekerDashboard() {
       const [applicationsResponse, savedResponse] =
         await Promise.all([
           fetch(
-            "http://localhost:5000/api/jobs/applications/my",
+            "https://jobhunt-5q5m.onrender.com/api/jobs/applications/my",
             {
               headers: {
                 Authorization: "Bearer " + token,
@@ -52,7 +52,7 @@ function JobSeekerDashboard() {
           ),
 
           fetch(
-            "http://localhost:5000/api/jobs/saved",
+            "https://jobhunt-5q5m.onrender.com/api/jobs/saved",
             {
               headers: {
                 Authorization: "Bearer " + token,

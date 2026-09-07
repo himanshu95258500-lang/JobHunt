@@ -35,7 +35,7 @@ function EditJob() {
       return;
     }
 
-    fetch(`http://localhost:5000/api/recruiter/jobs/${id}`, {
+    fetch(`https://jobhunt-5q5m.onrender.com/api/recruiter/jobs/${id}`, {
       headers: {
         Authorization: "Bearer " + token,
       },
@@ -94,7 +94,7 @@ function EditJob() {
       setSaving(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/recruiter/jobs/${id}`,
+        `https://jobhunt-5q5m.onrender.com/api/recruiter/jobs/${id}`,
         {
           method: "PUT",
           headers: {

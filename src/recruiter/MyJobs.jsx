@@ -21,7 +21,7 @@ function MyJobs() {
             return;
         }
 
-        fetch("http://localhost:5000/api/recruiter/jobs", {
+        fetch("https://jobhunt-5q5m.onrender.com/api/recruiter/jobs", {
             headers: {
                 Authorization: "Bearer " + token,
             },
@@ -55,7 +55,7 @@ function MyJobs() {
 
         try {
             const response = await fetch(
-                `http://localhost:5000/api/recruiter/jobs/${jobId}`,
+                `https://jobhunt-5q5m.onrender.com/api/recruiter/jobs/${jobId}`,
                 {
                     method: "DELETE",
                     headers: {
@@ -184,7 +184,7 @@ function MyJobs() {
 
                                             try {
                                                 const response = await fetch(
-                                                    `http://localhost:5000/api/recruiter/jobs/${job.id}/close`,
+                                                    `https://jobhunt-5q5m.onrender.com/api/recruiter/jobs/${job.id}/close`,
                                                     {
                                                         method: "PUT",
                                                         headers: {
@@ -232,7 +232,7 @@ function MyJobs() {
 
                                             try {
                                                 const response = await fetch(
-                                                    `http://localhost:5000/api/recruiter/jobs/${job.id}/reopen`,
+                                                    `https://jobhunt-5q5m.onrender.com/api/recruiter/jobs/${job.id}/reopen`,
                                                     {
                                                         method: "PUT",
                                                         headers: {

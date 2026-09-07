@@ -36,7 +36,7 @@ function Profile() {
         setUser(loggedInUser);
 
         const response = await fetch(
-          "http://localhost:5000/api/auth/profile",
+          "https://jobhunt-5q5m.onrender.com/api/auth/profile",
           {
             method: "GET",
             headers: {
@@ -107,7 +107,7 @@ function Profile() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/profile",
+        "https://jobhunt-5q5m.onrender.com/api/auth/profile",
         {
           method: "PUT",
           headers: {

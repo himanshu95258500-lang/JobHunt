@@ -30,7 +30,7 @@ function Applications() {
 
       setUser(parsedUser);
 
-      fetch("http://localhost:5000/api/jobs/applications/my", {
+      fetch("https://jobhunt-5q5m.onrender.com/api/jobs/applications/my", {
         headers: {
           Authorization: "Bearer " + token,
         },

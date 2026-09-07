@@ -76,7 +76,7 @@ function CreateJob() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/recruiter/jobs",
+        "https://jobhunt-5q5m.onrender.com/api/recruiter/jobs",
         {
           method: "POST",
           headers: {

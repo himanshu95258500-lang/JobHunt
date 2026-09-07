@@ -48,7 +48,7 @@ function AdminDashboard() {
   const fetchStats = async (token) => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/stats",
+        "https://jobhunt-5q5m.onrender.com/api/admin/stats",
         {
           headers: {
             Authorization: "Bearer " + token,

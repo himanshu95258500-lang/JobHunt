@@ -12,7 +12,7 @@ function JobDetails() {
     const [applying, setApplying] = useState(false);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/jobs/${id}`)
+        fetch(`https://jobhunt-5q5m.onrender.com/api/jobs/${id}`)
             .then((response) => response.json())
             .then((data) => {
                 console.log("Job details:", data);
@@ -49,7 +49,7 @@ function JobDetails() {
             setApplying(true);
 
             const response = await fetch(
-                `http://localhost:5000/api/jobs/${id}/apply`,
+                `https://jobhunt-5q5m.onrender.com/api/jobs/${id}/apply`,
                 {
                     method: "POST",
                     headers: {

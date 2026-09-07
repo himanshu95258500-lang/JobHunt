@@ -39,7 +39,7 @@ function ManageRecruiters() {
   const fetchRecruiters = async (token) => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/recruiters",
+        "https://jobhunt-5q5m.onrender.com/api/admin/recruiters",
         {
           headers: {
             Authorization: "Bearer " + token,

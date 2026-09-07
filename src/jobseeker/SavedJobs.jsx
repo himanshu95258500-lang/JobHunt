@@ -29,7 +29,7 @@ function SavedJobs() {
 
       setUser(parsedUser);
 
-      fetch("http://localhost:5000/api/jobs/saved", {
+      fetch("https://jobhunt-5q5m.onrender.com/api/jobs/saved", {
         headers: {
           Authorization: "Bearer " + token,
         },
@@ -70,7 +70,7 @@ function SavedJobs() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/jobs/${jobId}/save`,
+        `https://jobhunt-5q5m.onrender.com/api/jobs/${jobId}/save`,
         {
           method: "DELETE",
           headers: {

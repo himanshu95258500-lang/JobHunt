@@ -11,7 +11,7 @@ function Register() {
   const [role, setRole] = useState("jobseeker");
   const [terms, setTerms] = useState(false);
 
-  const handleRegister = async (e) => {
+  const handleRegister = async  (e) => {
     e.preventDefault();
 
     if (!name || !email || !password || !confirmPassword) {
@@ -42,7 +42,7 @@ function Register() {
     };
 
     try {
-  const response = await fetch("http://localhost:5000/api/auth/register", {
+  const response = await fetch("https://jobhunt-5q5m.onrender.com/api/auth/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
